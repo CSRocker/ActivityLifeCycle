@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_cyan"
+    android:padding="8dip"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sjsu_logo" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_a"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/light_blue"
+            android:paddingBottom="16dip"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+
+
+        <Button
+            android:id="@+id/btn_start_b"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/btn_start_b_label"
+            android:onClick="startActivityB"
+            />
+        <Button
+            android:id="@+id/btn_start_dialog"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/btn_start_dialog_label"
+            android:onClick="startDialog"
+            android:layout_marginLeft="150dp"
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp">
+
+        <TextView
+            android:layout_width="@dimen/textview_activitya_width"
+            android:layout_height="@dimen/textview_activitya_height"
+            android:text="@string/textview_activitya"
+            />
+        <TextView
+            android:id ="@+id/t"
+            android:layout_width="@dimen/textview_activitya_width"
+            android:layout_height="@dimen/textview_activitya_height"
+            android:text="@string/textview_activitya"
+            android:layout_marginLeft="65dp"/>
+        <TextView
+            android:id ="@+id/t2"
+            android:layout_width="@dimen/textview_counter_width"
+            android:layout_height="@dimen/textview_counter_height"
+            android:layout_marginLeft="65dp"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/btn_finish_a_label"
+        android:onClick="finishActivityA"
+
+        android:layout_marginLeft="130dp"
+        />
+
+</LinearLayout>
+
